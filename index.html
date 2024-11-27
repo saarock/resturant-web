@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restoran - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid bg-green-50 p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+    
+            <section id="hero"
+            class="relative h-screen bg-gradient-to-r from-green-600 via-teal-500 to-blue-600 text-white flex items-center justify-center overflow-hidden">
+            <!-- Parallax Background Image -->
+            <div class="absolute inset-0 w-full h-full bg-cover bg-center z-0"
+                style="background-image: url('https://lh5.googleusercontent.com/p/AF1QipPDsTX23ZWWJf82HtkZPxyE_cGwsS6jerL3D0lA=w408-h306-k-no'); background-attachment: fixed;">
+            </div>
+            <div class="absolute inset-0 w-full h-full bg-black opacity-60 z-10"></div>
+            <div class="absolute inset-0 w-full h-full bg-gradient-to-t from-black via-transparent to-black z-20"></div>
+        
+            <!-- Text Content -->
+            <div class="container-fluid mx-auto text-center px-6 md:px-12 relative z-30">
+                <!-- Hero Title -->
+                <h1 class="text-6xl md:text-7xl text-white font-extrabold tracking-wide mb-6 drop-shadow-lg main-title">
+                    Welcome to <span class="text-yellow-600">Taaryako Restaurant</span>
+                </h1>
+                <!-- Hero Subtitle -->
+                <p class="text-xl md:text-2xl text-gray-200 font-light mb-10 main-p-title">
+                    Discover culinary excellence with our delicious and exotic cuisines at Trip Sathi.
+                </p>
+        
+                <!-- Call to Action Buttons -->
+                <div class="space-x-4 wow fadeInDown infinite">
+                   <span class="scroll-down-icon "><a href="#service"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a> </span>              
+                </div>
+            </div>
+        
+            <!-- Floating Elements -->
+            <div class="absolute bottom-10 left-10 w-24 h-24 bg-green-500 rounded-full opacity-50 animate-bounce-slow"></div>
+            <div class="absolute top-10 right-10 w-16 h-16 bg-blue-500 rounded-full opacity-50 animate-bounce-slow"></div>
+            <div class="absolute bottom-20 right-20 w-20 h-20 bg-teal-400 rounded-full opacity-50 animate-bounce-slow"></div>
+        
+            <!-- Icon Grid (Decorative) -->
+            <div class="absolute left-0 top-1/4 w-48 h-48 bg-gradient-to-br from-green-600 to-teal-500 rounded-full flex items-center justify-center z-10 opacity-30">
+                <i class="fas fa-seedling text-5xl text-white opacity-80"></i>
+            </div>
+            <div class="absolute right-0 top-1/3 w-32 h-32 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full flex items-center justify-center z-10 opacity-30">
+                <i class="fas fa-leaf text-4xl text-white opacity-80"></i>
+            </div>
+            <div class="absolute right-10 bottom-1/4 w-40 h-40 bg-gradient-to-br from-blue-600 to-green-500 rounded-full flex items-center justify-center z-10 opacity-30">
+                <i class="fas fa-wine-glass-alt text-4xl text-white opacity-80"></i>
+            </div>
+        
+            <!-- Decorative Images -->
+            <div class="absolute left-10 top-1/3 w-20 h-20 z-20">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBAIFBgEHAAj/xABBEAABAwMCAwYCBgYJBQAAAAABAAIDBBEhEjEFIkEGEzJRYXGBkQcUIzOxwRVCUmKh8BYkNXKSorLR4SVDwuLx/8QAGwEAAgMBAQEAAAAAAAAAAAAAAgMBBAUABgf/xAAwEQADAAIBAwMEAQIFBQAAAAAAAQIDESEEEjEFQVETIjJhcRQjJDNCgZFSscHR8P/aAAwDAQACEQMRAD8A8iciOIlcQPcNHOPdCwkbTg4sox+Q78Gop/u1oRJl5yRdlXong8/1JJp9EbRQ0AmO6nQyUJTvwuQ5SVFZPZdTLOPGV7p/dIdFucYtLL6lLqh0wLseLm5QbGOdDcT22wbrtg6Q0x6FjEjsruVKobKEJClj5QFyFjpBF1kljkEiPOuSObLKmF1ajGVcmXRYxR4VhYitWcMI8KfpA/1DBvjQPEGuoAuYg+mH9YEWKOw76phXKqWyK44tOCx6nA+qgk2/DI9IBXY1yFvgvWGzCfRaOIoZ5Fnz2ctPFOzB6mSbKjCY4KXYWPDODV/GTenZohvmZ+Gj281UzZ8eFc+S703RZM74XHz7Goo+xXB47fXny1TrbF5Y2/s2x+ZWbfXZK/Hg2cXpeGPy5/8Av0Pf0Y7LtH9kUjv7zA78bpD6nK/NMuT0uJeJQH+iHZLVq/Q9L7Zt8r2Q/Xv5C/p4/wCkLH2W7KRYZwPhufOma78QheavkL6Ma8Bqfsz2aifrh4Fw5jvMUzAfwXfVp+5P05XsHk4LwJ3LJwmhI8jTsP5KPqNe53YvgUPZTss52r9C0IJ/ZiDR8gi+rXyD9KPgIOyPZkj+xaA+8QK76lfJ305+AVR2I7KzMLX8Eo2g9Ym92fm0gru+vkn6c/Bke0P0U0roHzcAqnxyWuKed2pp9nbj43U9+yO3Xg8m4rQ1XDKuSkr4JIJ2bscP4+o9UNBy9gad3Opx+Tsj4Lui6LSxoys9ltA3CszJn3kGtHKi7Rf1OQMjEDkdOQWkaltDpsARlBoYqMA5ZhskVxBfdnWXBPquORt6COzAplchlibNiKv4irmXBUTzcxytfCYnUSN8LYyrq4IHyd22V7WagL2ubI8tOIdfBWx4u6kj2mKjgpKKOngj0xRN0tAK8rkp23T8nqcUTjlTPhFdKAHEKtWyzOiACDTJCN0eSnRwQafJSkQduOqnRzJjSeinRBKw6LtHH2keqkg44eRK44g4H9srls7gxf0n8Ip+Idm6ions2ejaZYpbZHmPYokm2C9JHhtLLzqxjXIrK+DRcPdcBaeJGN1DLyl2CtJGbdDmnlUsBMBIxLY+GLyMwlssyxUtygGnnrlkm2RXHGg7OYb8VPsR7m3pHWaPZcghioltGTforeOuRWRbRnKiezznqtbDZl5oD0Fb3NRDKMmN4cPgbpt1uWiuo0foYu1UwccXaCvLUuT0E8pFHVShshueqRTHxygJqGgX1CyHaD7Wd+uRjd7QCbXuh7kiexsI2riH/dZ81PfPyd9Ovg63iFMTYTR3/vKFkh+5P0b+AzaqIjEjfmi+pPyD9K/gkKln7QU98/JHZXwdFQ0/rBcrn5OcV8HRKHGwOUSaZDlr2Il98jPspB0Y/wClGqEPYviAF9UumMfE2Rx5AvweEU33itY1yVsr4NJw07LTxIxeoZoKUcoVlGdbLC2AoZCYJ7UDHwLyNwlssyJublANR5w5ZBukTsuONB2eOPip9iPc2VKeX4KAwtQfsinwLvwZupbqkIWjjrRn5UfRsO3omuxPbwe58Wrqp/ZijqaOcB8jGaizd1wNl5nrauJbg3vT5mqXeYVtdVmXVJNJIW6iAXHfC84uqy922/B6T+mxqfBxlS7mEspkEuTqubXRLqHynW0wvoLhpa0DDWvDWvaC2xBaq/e/cdpewLutMlmhu1h6JW+dD0+Nho6a7tNmizbXHVD7nOlob+rxFrLNyDkg9FLcrwAmxiuDpWsDX2LMkX9N/dTeR0lp60BiSlva8gXPJjgjjc4aCXEk9SUuuofapTGTjlN00MMdM+NrA9zSNR1aj1Q11d9qWxbjGnvRZUbqwyX79xO9twcIp9RzxX5lPLjw6/Eofpe72HsjC2R1+8qGD5Z/Jej9L6yuobVGH1cx2/b8njlN94t/H5MzN4NHw3otPEY3UGipPCFYRnX5LAG4XMFEHIGWIF5BhLZZlibxzINDUeaOKxzeOHZccX/Z7Ye6kj3NlSZaSuSCGZWXiKfCE2ymdS6pDcK1L0U6DNogW2tlS7BSPR6Spb/RXh16t3fRM+zkksLFt2uYPh+Sw/UGp296Nn05O0lra9zOzuYX4a4cg6ZPmvKW02/4PVY0wOdJPp+CTvgelyEaC6xG+4sj3wC+GSdEQ0Yx1JCG4ZM2OQRM7oDp5opScgU3sIbRAvY3NrBJr7eSdd3AC3M45v0v1SG/cd44CwROlkDWjJ2QpOnpAXalbHKZoxq26JLa9yvkZd8Oj5hgKvKbrkzuorgyP04OA4FwyI/r1Nx8Glex9BhKm18GRmf2/wC549TN516vH5M/K+DQ8OGAtLEY+c0FIMBWEZ9j7TyqQEDe5Ax8sXkdhLZYlijjlAOPNSsY3yK44v8As7t7FSR7m0ofD7o5XJLLDTdifJWtgWUwLtk5FV+RoUuxsobJRZNlaaKkp5nHu4tTQ2MgGxN8jzuRn3XnfV+3vlV4PQekbUV2+RB2rWBIHBzTaxPkvNNvu1XsejnWtoi7xk9LnCXQ6XpaCxEXaHDITIpcbBpe4+xusDYfBW+1UivvtYz9XbG27dj0Q3gWNcELJ3MWrDbS0DBz7LPyvks4l7kc2bzXxsq7C42MNcBKzQRZrdOPOymr1zIlp9r2OU7LBpBuScjyVekkuBNvZd8ObkJE19yRnZ3wYD6cZby8Ip/Jsj/9I/Ne79FhT3fwl/zyZOZ8I8tgbZ69DjKOTwX/AA8bLRxsyM5fUmwVlGfY7+qpFgXlCx0i0hS2WZFnHKWOR5uVjHoCK44v+z2ApI9zZURs0I5OrwWsR5VYkrWdjPNhM2I1yNtOEDCSIyyHSyOw0gl17ZzYb/Bef9a39rN/0bxf+ws55LnEkk3uSvMW33tno4X26Og3F/W6B+BqXISEnvLHOoWTMdboHJOpLeBvK2+605ngoVXI2ANCK9dvIKfJV1DvtSBsVg5HumaUrgmCAC1t9Lt/h/8AUpsHzyxpsQdCZXWaQQAB1U0k47hHc1XaNQNIdY9VUv7eGKt7L3hwu4WCjH23k+3y2jN6jhHmf01Sa+0NJB0ipbj3c7/1X0X07H2PJ/Ov+EZOZ8I87hHOtXGVMngu6EbLQxmTnLyl2VlGfY5+qiFgJELGyKyJbLEi53Sx6POCsY9AcOy44v8As/spI9zX0fhCZJFFox1oynyV7OQyZTNFffI6H4QNBpg5DzAna9li+sz/AG5Zt+jUu+kDBxe2WkD8V5R+eT00+Drc3HS6UxqYRmZG+4CKXukdX4l7SNu0X38itvCvtMrI+RlzLMJ9EGaX2snHXJTPB70gi5PkF55+eTVT+0O8x2HdXt+yRt/OUFa3wLXd/qDRkBzg0gtIS6ehTW1yO0+XD2VfJTfLEXwjQ8KZct90/wBMx9/VQv2ZXUvg8j+lyQSdsagWzFDGz3wXf+S+idGmlf7pmZl9jERfeLRjyVcnguaHor+Mys5eUmwVmTPtDfRELAyFCxsisiWyxAsd0tj0ecFYxvnFxxf9nvCVKI9zXUZwEySGPl1oinyV7B08zdWSnFYeEzQMIWEiIk1Pwsj1ef8AD7Nb0h6ztfo7cl7idzuvHZH3Pk9bPgk0kfglba8DUthGEXYRffN0S0mjq8M01FHeIEBehwzuTEy19zHJoz3Zv67qc0/awcV8mflB74kmxuvLZF9zNuWu0kQbNyMDp5JLITXIePxfCyXQFcIsadpDjcWSMq15Klvg0XChYtvstD0Nb6udmT1LPC/pDn73tjxZxN/tg0fBoH5L3nRf5W/nf/dmflfOjNQnnV+PJVyeC5oTsr+MzMxeUp2VmTPsbvyohICQoWOkVkKWyxAuTlAOPOXLGN8iuONB2fwxEiDV0jsI0CxqWS0JTZYm0V8U9nH3TkxOh1tRjcqGzkgtJLrqdNxkE5Wb6mt9NRo+mvXUIsW6e6/fve/pZeMtT2fs9dO9/olcF1wBYpVNN70NnhEr6sjoBZdtt7JaSWjWcL54GnqBsvS9NzCMLqeLY/M3ksBe/wDBMzL7RWJ8mZqz/WXAEYK8hn/zGj0GL8DjDYEYzj+Kr7Oa2Hhw65KXQF+C0gcXuBKTmp3yylaSRoeHkABXvSLUZe7RlZ/J+du08/f9oeJy3PNVy/6iF9C6Vawz/CM2+aZWQ+NWsfkRfguKE7LQxGbmLylOArKM+xq+EQsDIULGSKvKVRYgAUA885KxjdOKTi/7P+FEgWammNmo0QTqH2hKYhdFO2azj7oti9B21Ngh2ckHoKi9fCPM2VTrecFfwXeh+3PJpxpMcdt+bVn2P+68XkS7Vo9dG+5nGqux6Jt6Wd12U+Fs7zwabhE4MAtvsV6HpMqrGjG6rHqh+sqBHA5xOwtgourz9mNsX0+LurRmw/UXOdnU456rylts3u3XC9goBFj5pTB2Hi3S6F2WVH4wq1+Cnl8GiozpgLj+q0lafpkt13fBkZvyPzHWzd7VTSftyOd8yvomNdsJfozH5B07udOgVfguqE7K/jM7MXdKdlakz7Q3fCIXoC8oWMlC0hS2WJAHdLY487KxzcOLji/4B4UaBZqafwI0QyFW60LvZMQujOulIefdELPu+IQ6CQxw6f8A6jT3Nh3gSc87xUh/TVrNP8m/Y0CDVcXJI9xheKySlG/2evlvZEKmWUd6hdxolPksOHSPjcRcC3Qq30uRyyvnhVyMVcssniJ072S+ry3kf6JwRM+BdpschZ5ZoPYiwdggWshoWteUMQ+IJVC78FnS74SMj0tIpZfBb1sog4HWzXtop3u/yla/pk/+DIzeT8xl1wD5r6D264M3ZKnPOjhC7LqiOyvYzPylzTHAVqSjaHCcBEK0CeUIcoXkKXRYlC5OUsaefFZBuHCpOL/gHgRIFmog8KYgWDrD9g72TULozL3c590zQnZy6jROyUDtNRC4b9438UNzuWFF6pP9/wDo9KafswPj+C8BnTTaPb43xs519VULSPnmxupRKGaZ4Egti46o4rV7BtfaNTSXs0HJ6XQ5q34BxyTpw15eD4rcubJEymFkbWiV7uJO5Sa5OSSXAzDuEmhdlrRjqk1P27KOYL2vm+rdjeKyE2/qzgPjhbnpE92WZ/ZkZn5Z+b9RsLr6AZhOnOUUIXZc0R2VyCjkLqlOArElOxoOwiFEHlCw5QvIUDHyAJyljTz8rINs+XHF/wAA8KNEGlgPKmIFga51oXeyahVmWe/7Q+6ZsTo+1qTj5shaQ8GxaQQfULn4OPT6d/eQMeDe7Qb+a8B1k6yUv2e3wPcJk7811QLaOPNipkINEbOxuufD4O8+Q4Lr2O/RLrkmdDDOTSCCCfPz/kIaWiG2wrmljrH5nqlUiJe0MQHKRQuy2oh19Uil4KGYR+lOYw9hayxsZNDPmV6f0Od5pZjZ/wAaPz64r25nBICikXZcUblbgp2XNM7AT5KloaDsIheiLnKGHIF5S2NlASUAwwBWQbZwrji/4AeRGiDSQnlCJM4X4gfsX+yYmLpGSe77R3ui7hfac1Ke47tO6sWXdx3aen8Df3vCaVx6xN/BeM6+ddRSPWdJW8Mv9IaKyjQlnJN1yDCRus7zwuZ2th2G4F76r/wQPRPgcii1xySXNmAb9bqO1tNgu9NL5CPJL7uvf1SKIhaQeDdJoCy3odwq78ooZig+mmbu+yEUV/vKhg+WV6/0Gf7u/wBGLn/E8LLl6/ZQ0ThPNZTLApFvRu2VqGU8iLemdhPllWkOB2EexejhKhkpAnlLY1AicoBiMCVkm2fHZccX3APAjQPuaSLwBSSLcR+5f7I0AzIP+8d7rgUj66nZOj5RsjR6Z2UJdwKkO1o+q8v6nLXUNno+hr/DyWLliGnJGQ5CmUGTbcnA6LmiUHi2aTsUDROyzpLFj2EX1758lP8Ap0JvymclIdM4tyq1vbGRxIeDxJFAWXFD4mpT5pFDN4MX9O09uHcLgB8U5J+DSvZ+hT+TMXP+K/k8bXpNlPROG+tHIFFxR4srcFLIWtO7CcitSGmvwi2Bo+L/AFUNhKQTnIGxikgXIdhpGFKyjYOHZcQX3ATyIkR7mkhPIERItX5hd7IkAzIPPO73XbIRwKCTt1xx6N2Elc/gTc+B7m/C/wDyvP8Aqqay7Xwbfpz3iLh+68+zZkHJlwHopkNskx9rk+W645DMZw3e3X0S2FtFhTAE3c4tDW6rgXv6InK0Jqvg60gvNhi6qUOXgah8QSaFX4Lnh452+6XPNIz874Z5r9OtRr4lwunB8LJHH/KF7n0Of7bZjdT4lHlt7rcKjDwNzdNlCbZa02ArMlW0WMLsJiYloPrwp2D2kTIh7g1IJ0iF0GpIl6W6GKTH6XeSoGkfaH+S7RBe8CY4NyESRGzRwtdpwEejtg6yB7oHWBvZEpYuqRl3cMqS82YbXU9oKs7+i6kDLCo7Se85+jZhuDf2U9p3ebzsLCYuDyxFp1icknzBAt+CxPVo5lmv6be5aLeTdeYrybsME/72/oUUDGSYABnSSW3wVzOTG6V+ljyA3IDRq8l01pHUtjUZdpFr2tmyXfgheScZufzVRob7DkPiCVYqvBdcP8Q90ufyM7P4PH/pmnMvayKMC/d0oP8Aicf9gvfejzrpk/2Y3VcUkYIeoK10io2OQN9E+SvZYQCydIih6M2CPYOjpeh2cpBuegbGKQZeluhikjrKBsYpA/o/91ILJIcP/dXHFxw2kEbBYI0AXdPBjZNkChh1K1zOiYhNEI+Gt6kLmQg36LjtuEASAycNiB6XUohj/B6ZkTZmsJuSDb4FZXqsbmX/ACafpl6qkfTtsV5DItUekxsXlOl7SOiiBx2Mlpvjy2Us4ap2gxvsHOLc46Bd272S3yWtHHeBwsWk6d/ZdU/YKqtUcfHoncPVU7XOhsVudjMQSL8g0y6oBZ1/JLlfeZ2fweSdu4PrvaapeR4WsYP8N/zX0X0ye3pZMPqn/dZnjw9t72/gtAr6OsoiNgmSxdSOQ0B8k+StQ3Hw+4tZHoU60cdw3yuo7SVYB/DndLoHIxWBPD3hLcjZogaGQdEtyxux3uXeSVosbOiJ3ku0RssKOLARpENlpDHhMQuhkMwjQpk2NA6LmgdhD7AqNE7BSN+C45jXAo+8rHx9XRm3qVV63H340WeivttgayMglmh2oG9xkELyHU4tPlHpcGTfhiUkchNi0gj0VNNIuqiQicADnHopa4OVIapg/UBcgONiV0+dHU+DQUcH2jW25bgOPurDxexVqvc7W0ZZU6mglrmggql1OPstaGYMqqCVLTufI1oG5AVecVZLUr5OyZVKbLUMFNHI+V7W2FhnJPSyfPQ5HkaM+8qbR5Jx2bvOM1rjfEzmi/kMfkvfdNj7MMz+jFzPuyNlc54TgD6NwRSDRY0wvkC4VmSpY9EB5BORVoLpFtgiYOwb2NO4CBhywLo2eQS2PTI93H5JY3ZwiIJGi1sG58S7R2xulfEbWsuSOLKLSQLJiF0GthMQqjrG3UsBBNGEISBStsoRLG+zvLxmD94lqDL+IeH8y2rKSJ7nskbkYxv81n5MUZPJoY814/xYBlJFGzR4m3vzZKS+kxa0OXVZG2yr4q+noq5lLoe67Nd7nHp/BIfpuK2MXXXKIMlgDmFsEpBAOHi4z1uufouJeGwZ9TyNeEW9FXxNlGlkhsdGSLOKiuiiPcYupu/YtKyta2gfLDC95jk06WzOaSCL9N/ZTPR4cnFCsuW55RWdm+IR8TrHtdSvhfHI2+qZx643P8/BPXR4MT+1ALqMtRtlzx+rdS1UNPFHAGytF5NPPh2cnon3EqHwIh07WzxqrL5qmaYn7yRzr+5urk+EV35Fy1QcdjCKSKLOlOkWViSrY/EcJ6KdhRsiBSIOQsZKAuG6Wx0kLJYxCklwDdot5kpBcFzjI0ge6gkcoiCMNufYriC2gL7DFgmoXQ2HHTujQqjgeQfF8kYoKHXHjKBhoHIxzhyXc7yCDwHrZadkn0TK8u4gCJg7SxryA1vqUnLb0Ox40nvZuDRcOfHrboc52dXeXVbaLS2LTcLhOWOAPSxXHdxVcR7NQ1dV9ZdI5smjRgHA+BUPflE7n3QoOxlGZBJUVc1w0AAEgG3xR99PyAoleC4p+B8Pa772S5Nzz7pVJMbLaRb0tLRxaSxjSWm4JznzXKUgW2zs0FCZhMYWtluHagLFxG3uiISYHiVPSOhE0tN3jmNsDcXA3Q3T7SYX3HhvFGwsq5fqTJDBc2D7EjPSysRk2uRNY9PgSL7DLSi7kRo414vsiTAqR6nc3yVqCpkRYwub5J8lSw+LYCIAg5Cw5AvslsegRQMYibo2dAR7KuXAckDXWs+3wUEhqWG3611xA/HHjdMkFhtAtnKYhFHzIxfZE2L0MMi9EDGJD0YNHT98Ld6/DL9PVCHoRgcXVrXPOqxudQvdJzPjQ7BP3bNBNXsNPC3uIbN3cI7H+Cq1potSnsWNQ17QWt0nzBIKDSGd1ClbU1Ie40xcRpxdx3+aXXngZD4e2KR8Qr2PAkDXYyDL/wAo12gvZbUtZYAiCF3oTdDbS5RMpvyXsNf3UbZHUrSA4X0jIChWDUomOJTVcrGwwmCEPbkgXOUx0CpWhni8E0lCS1xc1rci/qoy/iDj4o8WrYHR1Ese2h7m/Ips+AWJPaf5KLQPBBrD/JRyDQ7TtsrUMqWkPwqxLKdyHvhFsX2kHFC2MmQRQNjVJCyDY1Sf/9k=" alt="Chef Hat" class="w-full opacity-80 hover:opacity-100 transition-opacity">
+            </div>
+            <div class="absolute right-20 bottom-1/3 w-28 h-28 z-20">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBAIFBgEHAAj/xABBEAABAwMCAwYCBgYJBQAAAAABAAIDBBEhEjEFIkEGEzJRYXGBkQcUIzOxwRVCUmKh8BYkNXKSorLR4SVDwuLx/8QAGwEAAgMBAQEAAAAAAAAAAAAAAgMBBAUABgf/xAAwEQADAAIBAwMEAQIFBQAAAAAAAQIDESEEEjEFQVETIjJhcRQjJDNCgZFSscHR8P/aAAwDAQACEQMRAD8A8iciOIlcQPcNHOPdCwkbTg4sox+Q78Gop/u1oRJl5yRdlXong8/1JJp9EbRQ0AmO6nQyUJTvwuQ5SVFZPZdTLOPGV7p/dIdFucYtLL6lLqh0wLseLm5QbGOdDcT22wbrtg6Q0x6FjEjsruVKobKEJClj5QFyFjpBF1kljkEiPOuSObLKmF1ajGVcmXRYxR4VhYitWcMI8KfpA/1DBvjQPEGuoAuYg+mH9YEWKOw76phXKqWyK44tOCx6nA+qgk2/DI9IBXY1yFvgvWGzCfRaOIoZ5Fnz2ctPFOzB6mSbKjCY4KXYWPDODV/GTenZohvmZ+Gj281UzZ8eFc+S703RZM74XHz7Goo+xXB47fXny1TrbF5Y2/s2x+ZWbfXZK/Hg2cXpeGPy5/8Av0Pf0Y7LtH9kUjv7zA78bpD6nK/NMuT0uJeJQH+iHZLVq/Q9L7Zt8r2Q/Xv5C/p4/wCkLH2W7KRYZwPhufOma78QheavkL6Ma8Bqfsz2aifrh4Fw5jvMUzAfwXfVp+5P05XsHk4LwJ3LJwmhI8jTsP5KPqNe53YvgUPZTss52r9C0IJ/ZiDR8gi+rXyD9KPgIOyPZkj+xaA+8QK76lfJ305+AVR2I7KzMLX8Eo2g9Ym92fm0gru+vkn6c/Bke0P0U0roHzcAqnxyWuKed2pp9nbj43U9+yO3Xg8m4rQ1XDKuSkr4JIJ2bscP4+o9UNBy9gad3Opx+Tsj4Lui6LSxoys9ltA3CszJn3kGtHKi7Rf1OQMjEDkdOQWkaltDpsARlBoYqMA5ZhskVxBfdnWXBPquORt6COzAplchlibNiKv4irmXBUTzcxytfCYnUSN8LYyrq4IHyd22V7WagL2ubI8tOIdfBWx4u6kj2mKjgpKKOngj0xRN0tAK8rkp23T8nqcUTjlTPhFdKAHEKtWyzOiACDTJCN0eSnRwQafJSkQduOqnRzJjSeinRBKw6LtHH2keqkg44eRK44g4H9srls7gxf0n8Ip+Idm6ions2ejaZYpbZHmPYokm2C9JHhtLLzqxjXIrK+DRcPdcBaeJGN1DLyl2CtJGbdDmnlUsBMBIxLY+GLyMwlssyxUtygGnnrlkm2RXHGg7OYb8VPsR7m3pHWaPZcghioltGTforeOuRWRbRnKiezznqtbDZl5oD0Fb3NRDKMmN4cPgbpt1uWiuo0foYu1UwccXaCvLUuT0E8pFHVShshueqRTHxygJqGgX1CyHaD7Wd+uRjd7QCbXuh7kiexsI2riH/dZ81PfPyd9Ovg63iFMTYTR3/vKFkh+5P0b+AzaqIjEjfmi+pPyD9K/gkKln7QU98/JHZXwdFQ0/rBcrn5OcV8HRKHGwOUSaZDlr2Il98jPspB0Y/wClGqEPYviAF9UumMfE2Rx5AvweEU33itY1yVsr4NJw07LTxIxeoZoKUcoVlGdbLC2AoZCYJ7UDHwLyNwlssyJublANR5w5ZBukTsuONB2eOPip9iPc2VKeX4KAwtQfsinwLvwZupbqkIWjjrRn5UfRsO3omuxPbwe58Wrqp/ZijqaOcB8jGaizd1wNl5nrauJbg3vT5mqXeYVtdVmXVJNJIW6iAXHfC84uqy922/B6T+mxqfBxlS7mEspkEuTqubXRLqHynW0wvoLhpa0DDWvDWvaC2xBaq/e/cdpewLutMlmhu1h6JW+dD0+Nho6a7tNmizbXHVD7nOlob+rxFrLNyDkg9FLcrwAmxiuDpWsDX2LMkX9N/dTeR0lp60BiSlva8gXPJjgjjc4aCXEk9SUuuofapTGTjlN00MMdM+NrA9zSNR1aj1Q11d9qWxbjGnvRZUbqwyX79xO9twcIp9RzxX5lPLjw6/Eofpe72HsjC2R1+8qGD5Z/Jej9L6yuobVGH1cx2/b8njlN94t/H5MzN4NHw3otPEY3UGipPCFYRnX5LAG4XMFEHIGWIF5BhLZZlibxzINDUeaOKxzeOHZccX/Z7Ye6kj3NlSZaSuSCGZWXiKfCE2ymdS6pDcK1L0U6DNogW2tlS7BSPR6Spb/RXh16t3fRM+zkksLFt2uYPh+Sw/UGp296Nn05O0lra9zOzuYX4a4cg6ZPmvKW02/4PVY0wOdJPp+CTvgelyEaC6xG+4sj3wC+GSdEQ0Yx1JCG4ZM2OQRM7oDp5opScgU3sIbRAvY3NrBJr7eSdd3AC3M45v0v1SG/cd44CwROlkDWjJ2QpOnpAXalbHKZoxq26JLa9yvkZd8Oj5hgKvKbrkzuorgyP04OA4FwyI/r1Nx8Glex9BhKm18GRmf2/wC549TN516vH5M/K+DQ8OGAtLEY+c0FIMBWEZ9j7TyqQEDe5Ax8sXkdhLZYlijjlAOPNSsY3yK44v8As7t7FSR7m0ofD7o5XJLLDTdifJWtgWUwLtk5FV+RoUuxsobJRZNlaaKkp5nHu4tTQ2MgGxN8jzuRn3XnfV+3vlV4PQekbUV2+RB2rWBIHBzTaxPkvNNvu1XsejnWtoi7xk9LnCXQ6XpaCxEXaHDITIpcbBpe4+xusDYfBW+1UivvtYz9XbG27dj0Q3gWNcELJ3MWrDbS0DBz7LPyvks4l7kc2bzXxsq7C42MNcBKzQRZrdOPOymr1zIlp9r2OU7LBpBuScjyVekkuBNvZd8ObkJE19yRnZ3wYD6cZby8Ip/Jsj/9I/Ne79FhT3fwl/zyZOZ8I8tgbZ69DjKOTwX/AA8bLRxsyM5fUmwVlGfY7+qpFgXlCx0i0hS2WZFnHKWOR5uVjHoCK44v+z2ApI9zZURs0I5OrwWsR5VYkrWdjPNhM2I1yNtOEDCSIyyHSyOw0gl17ZzYb/Bef9a39rN/0bxf+ws55LnEkk3uSvMW33tno4X26Og3F/W6B+BqXISEnvLHOoWTMdboHJOpLeBvK2+605ngoVXI2ANCK9dvIKfJV1DvtSBsVg5HumaUrgmCAC1t9Lt/h/8AUpsHzyxpsQdCZXWaQQAB1U0k47hHc1XaNQNIdY9VUv7eGKt7L3hwu4WCjH23k+3y2jN6jhHmf01Sa+0NJB0ipbj3c7/1X0X07H2PJ/Ov+EZOZ8I87hHOtXGVMngu6EbLQxmTnLyl2VlGfY5+qiFgJELGyKyJbLEi53Sx6POCsY9AcOy44v8As/spI9zX0fhCZJFFox1oynyV7OQyZTNFffI6H4QNBpg5DzAna9li+sz/AG5Zt+jUu+kDBxe2WkD8V5R+eT00+Drc3HS6UxqYRmZG+4CKXukdX4l7SNu0X38itvCvtMrI+RlzLMJ9EGaX2snHXJTPB70gi5PkF55+eTVT+0O8x2HdXt+yRt/OUFa3wLXd/qDRkBzg0gtIS6ehTW1yO0+XD2VfJTfLEXwjQ8KZct90/wBMx9/VQv2ZXUvg8j+lyQSdsagWzFDGz3wXf+S+idGmlf7pmZl9jERfeLRjyVcnguaHor+Mys5eUmwVmTPtDfRELAyFCxsisiWyxAsd0tj0ecFYxvnFxxf9nvCVKI9zXUZwEySGPl1oinyV7B08zdWSnFYeEzQMIWEiIk1Pwsj1ef8AD7Nb0h6ztfo7cl7idzuvHZH3Pk9bPgk0kfglba8DUthGEXYRffN0S0mjq8M01FHeIEBehwzuTEy19zHJoz3Zv67qc0/awcV8mflB74kmxuvLZF9zNuWu0kQbNyMDp5JLITXIePxfCyXQFcIsadpDjcWSMq15Klvg0XChYtvstD0Nb6udmT1LPC/pDn73tjxZxN/tg0fBoH5L3nRf5W/nf/dmflfOjNQnnV+PJVyeC5oTsr+MzMxeUp2VmTPsbvyohICQoWOkVkKWyxAuTlAOPOXLGN8iuONB2fwxEiDV0jsI0CxqWS0JTZYm0V8U9nH3TkxOh1tRjcqGzkgtJLrqdNxkE5Wb6mt9NRo+mvXUIsW6e6/fve/pZeMtT2fs9dO9/olcF1wBYpVNN70NnhEr6sjoBZdtt7JaSWjWcL54GnqBsvS9NzCMLqeLY/M3ksBe/wDBMzL7RWJ8mZqz/WXAEYK8hn/zGj0GL8DjDYEYzj+Kr7Oa2Hhw65KXQF+C0gcXuBKTmp3yylaSRoeHkABXvSLUZe7RlZ/J+du08/f9oeJy3PNVy/6iF9C6Vawz/CM2+aZWQ+NWsfkRfguKE7LQxGbmLylOArKM+xq+EQsDIULGSKvKVRYgAUA885KxjdOKTi/7P+FEgWammNmo0QTqH2hKYhdFO2azj7oti9B21Ngh2ckHoKi9fCPM2VTrecFfwXeh+3PJpxpMcdt+bVn2P+68XkS7Vo9dG+5nGqux6Jt6Wd12U+Fs7zwabhE4MAtvsV6HpMqrGjG6rHqh+sqBHA5xOwtgourz9mNsX0+LurRmw/UXOdnU456rylts3u3XC9goBFj5pTB2Hi3S6F2WVH4wq1+Cnl8GiozpgLj+q0lafpkt13fBkZvyPzHWzd7VTSftyOd8yvomNdsJfozH5B07udOgVfguqE7K/jM7MXdKdlakz7Q3fCIXoC8oWMlC0hS2WJAHdLY487KxzcOLji/4B4UaBZqafwI0QyFW60LvZMQujOulIefdELPu+IQ6CQxw6f8A6jT3Nh3gSc87xUh/TVrNP8m/Y0CDVcXJI9xheKySlG/2evlvZEKmWUd6hdxolPksOHSPjcRcC3Qq30uRyyvnhVyMVcssniJ072S+ry3kf6JwRM+BdpschZ5ZoPYiwdggWshoWteUMQ+IJVC78FnS74SMj0tIpZfBb1sog4HWzXtop3u/yla/pk/+DIzeT8xl1wD5r6D264M3ZKnPOjhC7LqiOyvYzPylzTHAVqSjaHCcBEK0CeUIcoXkKXRYlC5OUsaefFZBuHCpOL/gHgRIFmog8KYgWDrD9g72TULozL3c590zQnZy6jROyUDtNRC4b9438UNzuWFF6pP9/wDo9KafswPj+C8BnTTaPb43xs519VULSPnmxupRKGaZ4Egti46o4rV7BtfaNTSXs0HJ6XQ5q34BxyTpw15eD4rcubJEymFkbWiV7uJO5Sa5OSSXAzDuEmhdlrRjqk1P27KOYL2vm+rdjeKyE2/qzgPjhbnpE92WZ/ZkZn5Z+b9RsLr6AZhOnOUUIXZc0R2VyCjkLqlOArElOxoOwiFEHlCw5QvIUDHyAJyljTz8rINs+XHF/wAA8KNEGlgPKmIFga51oXeyahVmWe/7Q+6ZsTo+1qTj5shaQ8GxaQQfULn4OPT6d/eQMeDe7Qb+a8B1k6yUv2e3wPcJk7811QLaOPNipkINEbOxuufD4O8+Q4Lr2O/RLrkmdDDOTSCCCfPz/kIaWiG2wrmljrH5nqlUiJe0MQHKRQuy2oh19Uil4KGYR+lOYw9hayxsZNDPmV6f0Od5pZjZ/wAaPz64r25nBICikXZcUblbgp2XNM7AT5KloaDsIheiLnKGHIF5S2NlASUAwwBWQbZwrji/4AeRGiDSQnlCJM4X4gfsX+yYmLpGSe77R3ui7hfac1Ke47tO6sWXdx3aen8Df3vCaVx6xN/BeM6+ddRSPWdJW8Mv9IaKyjQlnJN1yDCRus7zwuZ2th2G4F76r/wQPRPgcii1xySXNmAb9bqO1tNgu9NL5CPJL7uvf1SKIhaQeDdJoCy3odwq78ooZig+mmbu+yEUV/vKhg+WV6/0Gf7u/wBGLn/E8LLl6/ZQ0ThPNZTLApFvRu2VqGU8iLemdhPllWkOB2EexejhKhkpAnlLY1AicoBiMCVkm2fHZccX3APAjQPuaSLwBSSLcR+5f7I0AzIP+8d7rgUj66nZOj5RsjR6Z2UJdwKkO1o+q8v6nLXUNno+hr/DyWLliGnJGQ5CmUGTbcnA6LmiUHi2aTsUDROyzpLFj2EX1758lP8Ap0JvymclIdM4tyq1vbGRxIeDxJFAWXFD4mpT5pFDN4MX9O09uHcLgB8U5J+DSvZ+hT+TMXP+K/k8bXpNlPROG+tHIFFxR4srcFLIWtO7CcitSGmvwi2Bo+L/AFUNhKQTnIGxikgXIdhpGFKyjYOHZcQX3ATyIkR7mkhPIERItX5hd7IkAzIPPO73XbIRwKCTt1xx6N2Elc/gTc+B7m/C/wDyvP8Aqqay7Xwbfpz3iLh+68+zZkHJlwHopkNskx9rk+W645DMZw3e3X0S2FtFhTAE3c4tDW6rgXv6InK0Jqvg60gvNhi6qUOXgah8QSaFX4Lnh452+6XPNIz874Z5r9OtRr4lwunB8LJHH/KF7n0Of7bZjdT4lHlt7rcKjDwNzdNlCbZa02ArMlW0WMLsJiYloPrwp2D2kTIh7g1IJ0iF0GpIl6W6GKTH6XeSoGkfaH+S7RBe8CY4NyESRGzRwtdpwEejtg6yB7oHWBvZEpYuqRl3cMqS82YbXU9oKs7+i6kDLCo7Se85+jZhuDf2U9p3ebzsLCYuDyxFp1icknzBAt+CxPVo5lmv6be5aLeTdeYrybsME/72/oUUDGSYABnSSW3wVzOTG6V+ljyA3IDRq8l01pHUtjUZdpFr2tmyXfgheScZufzVRob7DkPiCVYqvBdcP8Q90ufyM7P4PH/pmnMvayKMC/d0oP8Aicf9gvfejzrpk/2Y3VcUkYIeoK10io2OQN9E+SvZYQCydIih6M2CPYOjpeh2cpBuegbGKQZeluhikjrKBsYpA/o/91ILJIcP/dXHFxw2kEbBYI0AXdPBjZNkChh1K1zOiYhNEI+Gt6kLmQg36LjtuEASAycNiB6XUohj/B6ZkTZmsJuSDb4FZXqsbmX/ACafpl6qkfTtsV5DItUekxsXlOl7SOiiBx2Mlpvjy2Us4ap2gxvsHOLc46Bd272S3yWtHHeBwsWk6d/ZdU/YKqtUcfHoncPVU7XOhsVudjMQSL8g0y6oBZ1/JLlfeZ2fweSdu4PrvaapeR4WsYP8N/zX0X0ye3pZMPqn/dZnjw9t72/gtAr6OsoiNgmSxdSOQ0B8k+StQ3Hw+4tZHoU60cdw3yuo7SVYB/DndLoHIxWBPD3hLcjZogaGQdEtyxux3uXeSVosbOiJ3ku0RssKOLARpENlpDHhMQuhkMwjQpk2NA6LmgdhD7AqNE7BSN+C45jXAo+8rHx9XRm3qVV63H340WeivttgayMglmh2oG9xkELyHU4tPlHpcGTfhiUkchNi0gj0VNNIuqiQicADnHopa4OVIapg/UBcgONiV0+dHU+DQUcH2jW25bgOPurDxexVqvc7W0ZZU6mglrmggql1OPstaGYMqqCVLTufI1oG5AVecVZLUr5OyZVKbLUMFNHI+V7W2FhnJPSyfPQ5HkaM+8qbR5Jx2bvOM1rjfEzmi/kMfkvfdNj7MMz+jFzPuyNlc54TgD6NwRSDRY0wvkC4VmSpY9EB5BORVoLpFtgiYOwb2NO4CBhywLo2eQS2PTI93H5JY3ZwiIJGi1sG58S7R2xulfEbWsuSOLKLSQLJiF0GthMQqjrG3UsBBNGEISBStsoRLG+zvLxmD94lqDL+IeH8y2rKSJ7nskbkYxv81n5MUZPJoY814/xYBlJFGzR4m3vzZKS+kxa0OXVZG2yr4q+noq5lLoe67Nd7nHp/BIfpuK2MXXXKIMlgDmFsEpBAOHi4z1uufouJeGwZ9TyNeEW9FXxNlGlkhsdGSLOKiuiiPcYupu/YtKyta2gfLDC95jk06WzOaSCL9N/ZTPR4cnFCsuW55RWdm+IR8TrHtdSvhfHI2+qZx643P8/BPXR4MT+1ALqMtRtlzx+rdS1UNPFHAGytF5NPPh2cnon3EqHwIh07WzxqrL5qmaYn7yRzr+5urk+EV35Fy1QcdjCKSKLOlOkWViSrY/EcJ6KdhRsiBSIOQsZKAuG6Wx0kLJYxCklwDdot5kpBcFzjI0ge6gkcoiCMNufYriC2gL7DFgmoXQ2HHTujQqjgeQfF8kYoKHXHjKBhoHIxzhyXc7yCDwHrZadkn0TK8u4gCJg7SxryA1vqUnLb0Ox40nvZuDRcOfHrboc52dXeXVbaLS2LTcLhOWOAPSxXHdxVcR7NQ1dV9ZdI5smjRgHA+BUPflE7n3QoOxlGZBJUVc1w0AAEgG3xR99PyAoleC4p+B8Pa772S5Nzz7pVJMbLaRb0tLRxaSxjSWm4JznzXKUgW2zs0FCZhMYWtluHagLFxG3uiISYHiVPSOhE0tN3jmNsDcXA3Q3T7SYX3HhvFGwsq5fqTJDBc2D7EjPSysRk2uRNY9PgSL7DLSi7kRo414vsiTAqR6nc3yVqCpkRYwub5J8lSw+LYCIAg5Cw5AvslsegRQMYibo2dAR7KuXAckDXWs+3wUEhqWG3611xA/HHjdMkFhtAtnKYhFHzIxfZE2L0MMi9EDGJD0YNHT98Ld6/DL9PVCHoRgcXVrXPOqxudQvdJzPjQ7BP3bNBNXsNPC3uIbN3cI7H+Cq1potSnsWNQ17QWt0nzBIKDSGd1ClbU1Ie40xcRpxdx3+aXXngZD4e2KR8Qr2PAkDXYyDL/wAo12gvZbUtZYAiCF3oTdDbS5RMpvyXsNf3UbZHUrSA4X0jIChWDUomOJTVcrGwwmCEPbkgXOUx0CpWhni8E0lCS1xc1rci/qoy/iDj4o8WrYHR1Ese2h7m/Ips+AWJPaf5KLQPBBrD/JRyDQ7TtsrUMqWkPwqxLKdyHvhFsX2kHFC2MmQRQNjVJCyDY1Sf/9k=" alt="Dish" class="w-full opacity-80 hover:opacity-100 transition-opacity">
+            </div>
+
+
+        </section>
+
+
+        </div>
+        
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container" id="service">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>Master Chefs</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Online Order</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>24/7 Service</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+       
+        <div class="container-fluid py-5 bg-dark text-light">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <!-- Image Grid Section -->
+                    <div class="col-lg-6 position-relative">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow fadeIn" data-wow-delay="0.1s" src="img/about-1.jpg" alt="About Image 1">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow fadeInUp" data-wow-delay="0.3s" src="img/about-2.jpg" alt="About Image 2" style="margin-top: 20%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow fadeInDown" data-wow-delay="0.5s" src="img/about-3.jpg" alt="About Image 3">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow fadeIn" data-wow-delay="0.7s" src="img/about-4.jpg" alt="About Image 4">
+                            </div>
+                        </div>
+                        <div class="position-absolute top-50 start-50 translate-middle bg-primary opacity-75 rounded-circle" style="width: 400px; height: 400px; z-index: -1;"></div>
+                    </div>
+        
+                    <!-- Content Section -->
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal wow fadeInUp">About Us</h5>
+                        <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                            Welcome to <i class="fa fa-utensils text-primary me-2"></i><span class="text-light">Restoran</span>
+                        </h1>
+                        <p class="mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                            We combine years of expertise with passion to deliver exceptional culinary experiences. Our team of skilled chefs is dedicated to creating flavors that tantalize your taste buds and leave a lasting impression.
+                        </p>
+                        <p class="mb-4 wow fadeInUp" data-wow-delay="0.6s">
+                            Whether you're here for a casual dinner or a grand celebration, Restoran promises an ambiance and menu that suit every occasion. Let's create unforgettable memories together.
+                        </p>
+                        <div class="row g-4 mb-4 wow fadeIn" data-wow-delay="0.8s">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">World-class</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-sm-3 px-sm-5 me-3 wow fadeInUp" href="#" data-wow-delay="1s">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5" id="menu">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Lovely</small>
+                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation Start -->
+        <section id="owners" class="py-20 text-center text-white bg-dark text-primary">
+            <div class="container mx-auto px-6">
+                <!-- Section Title -->
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Meet the Owner</h5>
+                </div>
+                <p class="text-lg font-light mb-12 px-10 max-w-3xl mx-auto">The founders of Tarewa Sekuwa Fry have a passion
+                    for good food and exceptional service. With years of experience in the restaurant industry, they aim to
+                    bring you the best dining experience, blending tradition with innovation.</p>
+        
+                <!-- Owner Profiles (Grid Layout) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Owner 1 -->
+                    <div class="flex flex-col items-center text-center hover:scale-105 transform transition-all duration-500">
+                        <img src=""
+                            alt="Owner 3"
+                            class="w-48 h-48 rounded-full object-cover mb-6 shadow-lg hover:shadow-2xl transition-shadow">
+                        <h3 class="text-2xl font-semibold text-primary">Sanjay Sharma</h3>
+                        <p class="text-xl text-white mb-4">Co-Founder & Operations Manager</p>
+                        <p class="text-lg font-light text-gray-200">With extensive operational expertise, Sanjay ensures
+                            every aspect of Tarewa Sekuwa Fry runs smoothly, from kitchen efficiency to customer
+                            satisfaction.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <!-- LinkedIn Icon -->
+                            <a href="https://www.linkedin.com" target="_blank"
+                                class="text-green-400 hover:text-green-300 text-lg">
+                                <i class="fab fa-linkedin w-8 h-8 inline-block"></i>
+                            </a>
+                            <!-- Instagram Icon -->
+                            <a href="https://www.instagram.com" target="_blank"
+                                class="text-pink-400 hover:text-pink-300 text-lg">
+                                <i class="fab fa-instagram w-8 h-8 inline-block"></i>
+                            </a>
+                            <!-- Facebook Icon -->
+                            <a href="https://www.facebook.com" target="_blank"
+                                class="text-blue-600 hover:text-blue-500 text-lg">
+                                <i class="fab fa-facebook w-8 h-8 inline-block"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center hover:scale-105 transform transition-all duration-500">
+                        <img src=""
+                            alt="Owner 3"
+                            class="w-48 h-48 rounded-full object-cover mb-6 shadow-lg hover:shadow-2xl transition-shadow">
+                        <h3 class="text-2xl font-semibold text-primary">Sanjay Sharma</h3>
+                        <p class="text-xl text-white mb-4">Co-Founder & Operations Manager</p>
+                        <p class="text-lg font-light text-gray-200">With extensive operational expertise, Sanjay ensures
+                            every aspect of Tarewa Sekuwa Fry runs smoothly, from kitchen efficiency to customer
+                            satisfaction.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <!-- LinkedIn Icon -->
+                            <a href="https://www.linkedin.com" target="_blank"
+                                class="text-green-400 hover:text-green-300 text-lg">
+                                <i class="fab fa-linkedin w-8 h-8 inline-block"></i>
+                            </a>
+                            <!-- Instagram Icon -->
+                            <a href="https://www.instagram.com" target="_blank"
+                                class="text-pink-400 hover:text-pink-300 text-lg">
+                                <i class="fab fa-instagram w-8 h-8 inline-block"></i>
+                            </a>
+                            <!-- Facebook Icon -->
+                            <a href="https://www.facebook.com" target="_blank"
+                                class="text-blue-600 hover:text-blue-500 text-lg">
+                                <i class="fab fa-facebook w-8 h-8 inline-block"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center hover:scale-105 transform transition-all duration-500">
+                        <img src=""
+                            alt="Owner 3"
+                            class="w-48 h-48 rounded-full object-cover mb-6 shadow-lg hover:shadow-2xl transition-shadow">
+                        <h3 class="text-2xl font-semibold text-primary">Sanjay Sharma</h3>
+                        <p class="text-xl text-white mb-4">Co-Founder & Operations Manager</p>
+                        <p class="text-lg font-light text-gray-200">With extensive operational expertise, Sanjay ensures
+                            every aspect of Tarewa Sekuwa Fry runs smoothly, from kitchen efficiency to customer
+                            satisfaction.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <!-- LinkedIn Icon -->
+                            <a href="https://www.linkedin.com" target="_blank"
+                                class="text-green-400 hover:text-green-300 text-lg">
+                                <i class="fab fa-linkedin w-8 h-8 inline-block"></i>
+                            </a>
+                            <!-- Instagram Icon -->
+                            <a href="https://www.instagram.com" target="_blank"
+                                class="text-pink-400 hover:text-pink-300 text-lg">
+                                <i class="fab fa-instagram w-8 h-8 inline-block"></i>
+                            </a>
+                            <!-- Facebook Icon -->
+                            <a href="https://www.facebook.com" target="_blank"
+                                class="text-blue-600 hover:text-blue-500 text-lg">
+                                <i class="fab fa-facebook w-8 h-8 inline-block"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+                
+            </div>
+            
+        </section>
+        
+
+        
+    
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+                    <h1 class="mb-5">Our Master Chefs</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer py-5">
+    <div class="container">
+        <div class="row g-5">
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-primary mb-4">About Us</h4>
+                <p>We provide exceptional services and experiences. Explore our website to learn more and join us in our journey.</p>
+                <div class="d-flex gap-2">
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="text-primary mb-4">Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a class="text-light text-decoration-none small" href="#">About Us</a></li>
+                    <li><a class="text-light text-decoration-none small" href="#">Contact Us</a></li>
+                    <li><a class="text-light text-decoration-none small" href="#">Privacy Policy</a></li>
+                    <li><a class="text-light text-decoration-none small" href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6" id="contact">
+                <h4 class="text-primary mb-4">Contact Info</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, City, Country</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-primary me-2"></i>+123 456 7890</p>
+                <p class="mb-0"><i class="fa fa-envelope text-primary me-2"></i>info@example.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <small>&copy; 2024 <a class="text-primary text-decoration-none" href="#">Your Brand</a>. All Rights Reserved.</small>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <small>Designed & Developed by <a class="text-primary text-decoration-none" href="https://aayush-theta.vercel.app/" target="_blank">Saarock</a>.</small>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script type="module">
+        import { backToTop } from "https://cdn.jsdelivr.net/gh/saarock/topPop@main/index.js";
+    
+        // Initialize the Back to Top button
+        backToTop.backToTopCodes({
+            backColor: "#FEA116", // Optional: Customize the button color
+        });
+    </script>
+</body>
+
+</html>
